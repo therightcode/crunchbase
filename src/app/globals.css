@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+h1 {
+  text-align: center;
+}
+
+.inputSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 30vh;
+}
+
+input {
+  padding: 12px 32px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dataSection {
+  background-color: beige;
+}
