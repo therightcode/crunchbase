@@ -1,69 +1,57 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAutoComplete } from "./createReducer";
+import { getData } from "./action";
 import { motion } from "framer-motion";
 
 function App() {
-  const [info, setInfo] = useState([]);
   const dispatch = useDispatch();
+  const [text, setText] = useState();
+  const { data, error, status } = useSelector((state) => state.post);
 
-  const state = useSelector((state) => state.post.status);
-  const data = useSelector((state) => state.post.data);
-  const error = useSelector((state) => state.post.error);
-
-  const [query, setQuery] = useState();
-
-  const handleProcess = () => {
-    dispatch(getAutoComplete({ query }));
+  const handleTatoo = () => {
+    dispatch(getData({ text }));
   };
 
-  useEffect(() => {
-    dispatch(getAutoComplete({ query }));
-
-    if (data && data.entities) {
-      const infoData = data.entities.map((item) =>
-        item.short_description.split(" , ")
-      );
-      setInfo(infoData);
-    }
-  }, [data]); // Added [data] as the dependency array
-
-  if (state === "Loading") {
-    return <h1>Loading...</h1>;
-  }
-
-  if (state === "error") {
-    return <h3>Something went wrong: {error}</h3>;
-  }
+  console.log(data?.final_result);
+  console.log(text);
+  console.log("error" + error);
   return (
-    <div className="container">
-      <div className="inputSection">
+    <>
+      <h1>Get Tattoo Image FREE</h1>
+      <div className="iinputWrapper">
         <input
-          required
-          placeholder="Enter text Here..."
-          onChange={(e) => setQuery(e.target.value)}
-        ></input>
-        <button type="submit" onClick={handleProcess}>
-          Submit
-        </button>
+          type="text"
+          placeholder="Enter Search"
+          onChange={(e) => setText(e.target.value)}
+        />
+        <button onClick={handleTatoo}>Get Tatoo</button>
       </div>
 
-      <div className="dataSection">
-        {info?.map((item, index) => (
+      {status === "loading" && (
+        <div className="status">
+          <h1>Loading</h1>
+        </div>
+      )}
+
+      {status === "error" && (
+        <div className="status">
+          <h1>Error</h1>
+        </div>
+      )}
+
+      <div className="cardContainer">
+        {data?.final_result?.map((item, index) => (
           <motion.div
-            initial={{ x: index % 3 === 0 ? -20 : index % 3 === 1 ? -15 : -10 }}
-            animate={{ x: 0 }}
-            exit={{ x: 10 }}
-            transition={{ duration: (index % 3) / 0.9 }}
+            className="card"
             key={index}
-            style={{ margin: "20px", background: "white" }}
+            initial={{ x: index * 100 + 300, opacity: 0, filter: "blur(20px)" }}
+            animate={{ x: 0, opacity: 1, filter: "blur(0)" }}
           >
-            <p>{item}</p>
+            <img src={item.origin} alt="" />
           </motion.div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

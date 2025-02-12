@@ -1,0 +1,466 @@
+.footerContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  /* background-color: rgb(241, 60, 90); */
+  height: 55vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 80px;
+}
+.fLogContainer h1 {
+  text-align: center;
+  color: lightblue;
+  font-family: ballega;
+  margin-bottom: -10px;
+  /* margin-top: 100px; */
+}
+.fLogContainer .secondClass {
+  margin-top: 50px;
+}
+.choicelist h3 {
+  color: white;
+}
+.check {
+  background: transparent;
+  border-radius: 50%;
+  color: lightblue;
+}
+
+.checksocial {
+  background: transparent;
+  border-radius: 50%;
+  color: lightblue;
+  margin-top: 10px;
+}
+
+.choicelist {
+  display: grid;
+  grid-template-columns: 0.1fr 4fr 1fr;
+  /* background-color: red; */
+  height: 40px;
+  margin: 5px;
+}
+.fEnd h1 {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.check {
+  font-size: 45px;
+}
+.fEnd {
+  height: 30px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fItem {
+  /* background-color: yellow; */
+  /* width: 250px; */
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.fLogContainer label {
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.fLogContainer {
+  margin-top: 100px;
+}
+
+.span1zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.span1 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  right: 190px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.span2 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  left: 200px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.span2zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan1zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan1 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  right: 200px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan2 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  left: 200px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan2zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.infoVidWrapper {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.infoVidWrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoVidContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fLogContainer input {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.fLogContainer textarea {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  resize: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  margin-top: 20px;
+  outline: 2px solid blue;
+}
+.sMessage {
+  /* background-color: yellow; */
+  margin-bottom: 50px;
+}
+
+.fLogContainer button:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  transition: 0.5s ease-in-out;
+}
+.choicelist h3 {
+  color: lightblue;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.choicelist a {
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.choicelist a:hover {
+  color: wheat;
+}
+
+.fLogContainer button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: lightblue;
+  transition: 0.5s ease-in-out;
+}
+
+.fLogContainer button:hover::before {
+  width: 100%;
+}
+
+.fLogContainer button:hover::after {
+  width: 100%;
+}
+
+.fFormElement {
+  /* background-color: blue; */
+  height: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.fFormElement .labelFocused {
+  top: -25px;
+}
+
+.fFormElement .fixMessageFocused {
+  top: -2px;
+}
+
+.fFormElement .fixlabelmessage {
+  top: 0px;
+}
+
+.fFormElement .fixlabelemail {
+  top: 2pc;
+}
+
+.fFormElement button {
+  display: flex;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: blueviolet;
+}
+
+.logo {
+  margin-top: 65px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.footerL h2 {
+  /* font-style: italic; */
+  text-align: center;
+  /* margin-left: 200px; */
+}
+
+.footerContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 200px;
+  /* background-color: red; */
+  margin-top: 67px;
+}
+.fItem {
+  /* background-color: red; */
+  height: 100%;
+}
+
+.footerLogo {
+  /* background-color: green; */
+  height: 300px;
+}
+.footerL {
+  /* background-color: blue; */
+  margin-left: 20px;
+}
+
+.footerLocation {
+  /* background-color: red; */
+  /* height: 500px; */
+  width: 450px;
+  margin: 0 auto;
+}
+
+.ticks {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  /* background-color: lightblue; */
+  border:1px solid lightblue;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;
+  /* border-radius: 50%; */
+  margin-bottom: 30px;
+}
+.ticks img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerL h2 {
+  color: lightblue;
+  /* margin-left: 45px; */
+}
+
+.fLogWrapper {
+  width: 400px;
+  height: 300px;
+  box-shadow: 1px 0px 2px 2px indigo;
+  /* background: linear-gradient(to right, #333, indigo); */
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -70px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 199px) {
+}
+
+@media only screen and (min-width: 200px) and (max-width: 224px) {
+}
+@media only screen and (min-width: 225px) and (max-width: 249px) {
+}
+@media only screen and (min-width: 250px) and (max-width: 274px) {
+}
+@media only screen and (min-width: 275px) and (max-width: 299px) {
+}
+
+@media only screen and (min-width: 300px) and (max-width: 324px) {
+}
+@media only screen and (min-width: 325px) and (max-width: 349px) {
+}
+
+@media only screen and (min-width: 350px) and (max-width: 374px) {
+}
+
+@media only screen and (min-width: 375px) and (max-width: 399px) {
+}
+
+@media only screen and (min-width: 400px) and (max-width: 424px) {
+}
+
+@media only screen and (min-width: 425px) and (max-width: 449px) {
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
+    place-content: center;
+  }
+  .check {
+    font-size: 30px;
+  }
+  .footerL h2 {
+    font-size: 17px;
+    text-align: center;
+    margin-right: 40px;
+  }
+}
+
+/* styles for tablet */
+
+@media only screen and (min-width: 500px) and (max-width: 549px) {
+  /* styles for tablet */
+}
+
+@media only screen and (min-width: 550px) and (max-width: 599px) {
+  /* styles for tablet */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 649px) {
+  /* styles for laptop/desktop */
+}
+@media only screen and (min-width: 650px) and (max-width: 699px) {
+  /* styles for laptop/desktop */
+}
+@media only screen and (min-width: 700px) and (max-width: 749px) {
+}
+@media only screen and (min-width: 750px) and (max-width: 799px) {
+}
+@media only screen and (min-width: 800px) and (max-width: 849px) {
+  /* styles for laptop/desktop */
+}
+@media only screen and (min-width: 850px) and (max-width: 899px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 900px) and (max-width: 949px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 950px) and (max-width: 999px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1049px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1099px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1149px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1199px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1249px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1299px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1349px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1399px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1449px) {
+  /* styles for large screens */
+}
+@media only screen and (min-width: 1450px) and (max-width: 1499px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2500px) {
+  /* styles for large screens */
+}

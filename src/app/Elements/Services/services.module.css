@@ -1,0 +1,411 @@
+.serviceContainer {
+  width: 100vw;
+
+  /* background-color: brown; */
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.sHeads {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.serviceWrapper {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(1, 1, 70);
+  place-items: center;
+  height: 100%;
+}
+.hed {
+  font-size: 300px;
+  /* background-color: yellow; */
+}
+.card p {
+  font-style: italic;
+  border-left: 1px solid black;
+}
+.sBtns {
+  /* background: linear-gradient(to right, lightblue, wheat); */
+  border: none;
+}
+
+.sBtns:hover {
+  /* background: linear-gradient(to right, wheat, lightblue); */
+}
+
+@property --color1 {
+  syntax: "<color>";
+  initial-value: rgb(21, 0, 36);
+  inherits: false;
+}
+
+@property --color2 {
+  syntax: "<color>";
+  initial-value: rgb(1, 121, 161);
+  inherits: false;
+}
+
+.serviceCard1,
+.serviceCard2,
+.serviceCard3,
+.serviceCard4,
+.serviceCard5,
+.serviceCard6 {
+  width: 350px;
+  height: 300px;
+  /* background-color: red; */
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.card {
+  --color1: rgb(21, 0, 36);
+  /* --color2: rgb(1, 121, 161); */
+  --color2: rgb(22, 74, 92);
+
+  background: linear-gradient(to right, var(--color1), var(--color1));
+  transition: --color1 3s ease-in-out, --color2 3s ease-in-out,
+    outline 0.3s ease-in-out;
+  cursor: pointer;
+  /* overflow: hidden; */
+  /* background: rgb(22, 74, 92); */
+}
+
+.card:hover {
+  --color1: rgb(1, 121, 161);
+  --color2: rgb(21, 0, 36);
+  background: linear-gradient(to right, var(--color1), var(--color2));
+
+  /* border: 3px solid rgb(21, 0, 36); */
+  /* border: 3px solid indigo; */
+  outline: 3px solid indigo;
+}
+
+.card h1 {
+  margin-top: 45px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: lightblue;
+}
+.card p {
+  margin-left: 25px;
+  color: wheat;
+  font-size: 18px;
+  /* font-style: bold; */
+}
+
+.servicebtn {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px; */
+  /* background-color: green; */
+  margin-top: 20px;
+}
+
+.serviceCard1 button,
+.serviceCard2 button,
+.serviceCard3 button,
+.serviceCard4 button,
+.serviceCard5 button,
+.serviceCard6 button {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  background: rgb(50, 1, 85);
+  color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 199px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 224px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 225px) and (max-width: 249px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 250px) and (max-width: 274px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 275px) and (max-width: 299px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 324px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 325px) and (max-width: 349px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 374px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 399px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 424px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 1300px;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 449px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+/* styles for tablet */
+
+@media only screen and (min-width: 500px) and (max-width: 549px) {
+  /* styles for tablet */
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 599px) {
+  /* styles for tablet */
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 649px) {
+  /* styles for laptop/desktop */
+  .serviceWrapper {
+    grid-template-columns: 1fr;
+  }
+  .serviceContainer {
+    margin-bottom: 650px;
+  }
+  .sHeads {
+    margin-bottom: -50px;
+    /* background-color: red; */
+    margin-top: 400px;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 699px) {
+  /* styles for laptop/desktop */
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 749px) {
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 799px) {
+  .sHeads {
+    margin-top: 250px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 849px) {
+  /* styles for laptop/desktop */
+}
+@media only screen and (min-width: 850px) and (max-width: 899px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 900px) and (max-width: 949px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 950px) and (max-width: 999px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1049px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1099px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1149px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1199px) {
+  /* styles for laptop/desktop */
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1249px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1299px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1349px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1399px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1449px) {
+  /* styles for large screens */
+}
+@media only screen and (min-width: 1450px) and (max-width: 1499px) {
+  /* styles for large screens */
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2500px) {
+  /* styles for large screens */
+}

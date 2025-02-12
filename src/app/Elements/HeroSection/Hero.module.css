@@ -1,0 +1,218 @@
+.heroContainer {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: lightblue; */
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 3000px; */
+}
+
+.social i {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.social i:hover {
+  color: lightblue;
+
+  box-shadow: 0 20px 40px lightblue;
+}
+
+.hello {
+  margin-top: 50px;
+}
+
+.info h1 {
+  color: lightblue;
+  font-size: 37px;
+  /* font-family: kolak; */
+  /* margin-left: 800px; */
+}
+.info {
+  height: 340px;
+  z-index: 10;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+  box-shadow: 0 25px 45px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.btn button {
+  width: 150px;
+  height: 33px;
+  margin-right: 10px;
+  font-family: ballega;
+  background: linear-gradient(to right, blue, lightblue);
+  border: none;
+  color: wheat;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn button:hover {
+  text-shadow: 0px 25px 45px white;
+}
+
+.wrapper {
+  width: 500px;
+  height: 500px;
+}
+
+.profimage {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  /* border-radius: 50%; */
+  top: 0;
+}
+
+.profimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.btn input {
+  width: 150px;
+  height: 28px;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: lightblue;
+  color:black;
+}
+
+.infoCover {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to right, blue, lightblue);
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.cover {
+  width: 100px;
+  height: 300px;
+  background: linear-gradient(to right, blue, lightblue);
+  filter: blur(70px);
+  border-radius: 50%;
+  margin-left: 200px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    /* background-color: red; */
+    background-color: #041030;
+    margin: 0 20px;
+    text-align: center;
+    width: 400px;
+  }
+  .profimage {
+    left: 0%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+  .infoCover {
+    top: 97%;
+    left: 7%;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 2000px) {
+  .heroContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .profile {
+  }
+  .insta {
+    margin-left: 86px;
+  }
+
+  .info {
+    /* background-color: green; */
+    width: 450px;
+    margin-top: 60px;
+    background-color: #041030;
+  }
+
+  .infoCover {
+    top: 30%;
+    left: 80%;
+    background: linear-gradient(to right, blue, black);
+    transform: rotate(30deg);
+    width: 200px;
+    height: 200px;
+  }
+  .info h1 {
+    /* margin-left: 80px; */
+    text-align: center;
+  }
+  .social {
+    margin-left: 55px;
+  }
+  .btn {
+    margin-left: 60px;
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
+  /* Set initial state to match the first keyframe */
+  transform: translateY(100vh) scale(0);
+  opacity: 0;
+  animation: navigate 20s linear infinite;
+  animation-fill-mode: forwards; /* This ensures it keeps the final state */
+}
+
+@keyframes navigate {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(1);
+    opacity: 0;
+  }
+}

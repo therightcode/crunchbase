@@ -1,0 +1,275 @@
+.contactContainer {
+  width: 100vw;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contactAnime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.AnimeWrapper {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  /* background-color: red; */
+  margin-left: 100px;
+}
+.AnimeWrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cHead {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footerLocation {
+  /* background-color: red; */
+  /* height: 500px; */
+  width: 500px;
+  margin: 0 auto;
+  margin-right: 150px;
+}
+
+.fLogWrapper {
+  width: 450px;
+  height: 300px;
+  box-shadow: 1px 0px 2px 2px indigo;
+  /* background: linear-gradient(to right, #333, indigo); */
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -70px;
+  /* background-color: yellow; */
+}
+
+.fLogContainer textarea {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  resize: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  margin-top: 20px;
+  outline: 2px solid blue;
+}
+
+.fLogContainer h1 {
+  text-align: center;
+  color: lightblue;
+  font-family: ballega;
+  margin-bottom: -10px;
+  /* margin-top: 100px; */
+}
+
+.fLogContainer .secondClass {
+  margin-top: 50px;
+}
+
+.fLogContainer label {
+  position: absolute;
+  top: 15px;
+  left: 80px;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.fLogContainer {
+  margin-top: 100px;
+}
+
+.fLogContainer input {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.fLogContainer button:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  transition: 1s ease-in-out;
+}
+.fLogContainer button:hover {
+  background-color: indigo;
+}
+
+.fLogContainer button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  background-color: lightblue;
+  transition: 1s ease-in-out;
+}
+
+.fLogContainer button:hover::before {
+  width: 100%;
+}
+
+.fLogContainer button:hover::after {
+  width: 100%;
+}
+
+.fLogContainer .secondClass {
+  margin-top: 50px;
+}
+
+.fFormElement {
+  /* background-color: blue; */
+  height: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.fFormElement .labelFocused {
+  top: -25px;
+}
+
+.fFormElement .fixMessageFocused {
+  top: -13px !important;
+  color: lightblue;
+}
+
+.fFormElement .fixlabelmessage {
+  top: 0px;
+}
+
+.fFormElement .fixlabelemail {
+  top: 2pc;
+}
+
+.fFormElement button {
+  display: flex;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: blueviolet;
+  transition: 0.5s ease-in-out;
+}
+
+.sMessage {
+  /* background-color: yellow; */
+  margin-bottom: 50px;
+}
+
+.fFormElement .fixMessageFocused {
+  top: -2px;
+}
+
+.fFormElement .labelFocused {
+  top: -25px;
+  color: lightblue;
+}
+
+.fFormElement .fixlabelemail {
+  top: 2pc;
+}
+
+.fFormElement .fixlabelmessage {
+  top: 0px;
+}
+
+.span1 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  /* background-color: yellow; */
+  right: 220px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.span1zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.span2 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  left: 200px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+.span2zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan2zero {
+  width: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.messagespan2 {
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: lightblue;
+  left: 200px;
+  bottom: 20%;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 0) and (max-width: 699px) {
+  .cHead {
+    margin-top: 750px;
+  }
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .fLogWrapper{
+    margin: 0 ;
+  }
+
+  .contactAnime {
+    width: 100%;
+  }
+  .AnimeWrapper {
+    margin-left: 0;
+    margin-right: 200px;
+  }
+  .fLogWrapper {
+  }
+
+  .contactContainer {
+    margin-bottom: 350px;
+  }
+}

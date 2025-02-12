@@ -1,0 +1,327 @@
+.navs {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+}
+
+.logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.collapsed {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  background-color: rgb(52, 6, 85);
+  top: 2%;
+  right: 2%;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.hidden {
+  position: absolute;
+  /* width: 250px;
+  height: 0px;
+  background-color: indigo;
+  top: -100%;
+  right: 2%;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out; */
+
+  width: 0%;
+  height: 0%;
+  transition: 3s ease-in-out;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-radius: 50%;
+  top: 0;
+  right: -100%;
+}
+
+.collapseditems a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.home {
+  /* background-color: yellow; */
+  height: 40px;
+
+  margin-top: 70px;
+  font-family: ballega;
+  display: flex;
+  align-items: center;
+}
+
+@property --ntage {
+  initial-value: 0%;
+  syntax: "<percentage>";
+  inherits: false;
+}
+
+.home:hover {
+  --angle: 30%;
+  background: linear-gradient(to right, indigo, pink var(--ntage), indigo);
+  animation: anime 4.5s ease-in-out infinite;
+}
+
+.home:hover a {
+  color: indigo;
+}
+
+.about:hover a {
+  color: indigo;
+}
+
+.contact:hover a {
+  color: indigo;
+}
+
+.project:hover a {
+  color: indigo;
+}
+
+.work:hover a {
+  color: indigo;
+}
+
+.about:hover {
+  /* background-color: yellow; */
+  --angle: 30%;
+  background: linear-gradient(to right, indigo, pink var(--ntage), indigo);
+  animation: anime 6s ease-in-out infinite;
+}
+
+.project:hover {
+  /* background-color: yellow; */
+  --angle: 30%;
+  background: linear-gradient(to right, indigo, pink var(--ntage), indigo);
+  animation: anime 6s ease-in-out infinite;
+}
+
+.work:hover {
+  /* background-color: yellow; */
+  --angle: 30%;
+  background: linear-gradient(to right, indigo, pink var(--ntage), indigo);
+  animation: anime 6s ease-in-out infinite;
+}
+
+.contact:hover {
+  /* background-color: yellow; */
+  --angle: 30%;
+  background: linear-gradient(to right, indigo, pink var(--ntage), indigo);
+  animation: anime 6s ease-in-out infinite;
+}
+
+.home a {
+  margin-left: 60px;
+  color: lightblue;
+}
+
+.about a {
+  margin-left: 60px;
+  color: lightblue;
+}
+
+.work a {
+  margin-left: 60px;
+  color: lightblue;
+}
+
+.project a {
+  margin-left: 60px;
+  color: lightblue;
+}
+
+.contact a {
+  margin-left: 60px;
+  color: lightblue;
+}
+
+.about {
+  /* background-color: yellow; */
+  height: 40px;
+  /* text-align: center; */
+  font-family: ballega;
+  align-items: center;
+  display: flex;
+}
+.work {
+  /* background-color: yellow; */
+  height: 40px;
+  /* text-align: center; */
+  font-family: ballega;
+  align-items: center;
+
+  display: flex;
+}
+
+.contact {
+  /* background-color: yellow; */
+  height: 40px;
+  /* text-align: center; */
+  font-family: ballega;
+  display: flex;
+  align-items: center;
+}
+
+.project {
+  /* background-color: yellow; */
+  height: 40px;
+  /* text-align: center; */
+  display: flex;
+  font-family: ballega;
+  align-items: center;
+}
+
+.footer {
+  background-color: yellow;
+  height: 30px;
+  margin-left: 30px;
+  font-family: ballega;
+  align-items: center;
+}
+
+.collapseditems {
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+
+.show {
+  height: 400px;
+}
+
+.collapsed:hover .collapseCover {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 0;
+  display: none;
+}
+.collapseCover {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 200px;
+}
+
+.menuicon {
+  /* background-color: yellow; */
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+.menuicon i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+.navs {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo h1 {
+  margin-left: 20px;
+  font-family: ballega;
+  cursor: pointer;
+  color: wheat;
+  transition: 0.1s ease-in-out;
+  margin-left: 150px;
+}
+.logo h1:hover {
+  text-shadow: 0 25px 35px lightblue;
+  color: lightblue;
+}
+
+.navItems a {
+  font-family: ballega;
+  color: lightblue;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+  transition: 0.5s ease-in-out;
+}
+.colicon {
+  position: fixed;
+  top: 20%;
+  right: 15%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.colicon i {
+  font-size: 25px;
+  cursor: pointer;
+  color: blue;
+  transition: 0.5s ease-in-out;
+}
+
+.colicon i:hover {
+  color: lightblue;
+}
+
+.navItems a:hover {
+  text-shadow: 0 25px 35px white;
+  color: white;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .navItems {
+    display: none;
+  }
+  .logo h1 {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 3000px) {
+  .menuicon {
+    display: none;
+  }
+  .logo h1 {
+    margin-left: 260px;
+  }
+  .navItems {
+    margin-left: 250px;
+  }
+}
+
+@keyframes anime {
+  0% {
+    --ntage: 30%;
+  }
+  100% {
+    --ntage: 70%;
+  }
+}

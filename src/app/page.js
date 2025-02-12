@@ -1,17 +1,20 @@
-"use client";
-import React from "react";
-import store from "./components/store";
-import { Provider } from "react-redux";
-import App from "./components/App";
+"use client"
+import React from 'react'
+import App from './components/App'
+import { Provider } from 'react-redux'
+import store from './components/store'
 
 function page() {
   return (
     <div>
+      
       <Provider store={store}>
-        <App />
+      <App></App>
+
       </Provider>
+
     </div>
-  );
+  )
 }
 
-export default page;
+export default page
